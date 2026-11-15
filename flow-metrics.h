@@ -25,6 +25,7 @@ PrintThroughputOnce(Ptr<FlowMonitor> monitor, std::map<uint32_t, uint64_t>& last
         const uint64_t currentRx = stats.rxBytes;
         const uint64_t deltaRx = currentRx - lastRxBytes[flow.first];
         const double throughputMbps = (deltaRx * 8.0) / 1e6;
+        //Testing123
 
         std::cout << "Time " << Simulator::Now().As(Time::S) << "s | flow " << flow.first
                   << " | txBytes=" << stats.txBytes << " | rxBytes=" << stats.rxBytes
